@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,22 +48,79 @@
     <header class="container my-4">
         <div class="row">
             <div class="col-12 col-lg-6 pt-5">
-                <h1 class="text-center text-md-start mt-5">Chamada <span class="text-primary">Impacto</span></h1>
-                <p class="lead text-muted text-center text-md-start mt-3">descrição descrição descrição descrição descrição </p>
+                <h1 class="text-center text-md-start mt-5">Canis lupus  <span class="text-primary">familiaris</span></h1>
+                <p class="lead text-muted text-center text-md-start mt-3 ">O cão, no Brasil também chamado de cachorro, é um mamífero carnívoro da família dos canídeos, subespécie do lobo, e talvez o mais antigo animal domesticado pelo ser humano. Teorias postulam que surgiu do lobo cinzento no continente asiático há mais de 100 000 anos </p>
                 <div class="mt-5">
-                <button class="btn btn-primary btn-lg">Saiba mais</button>
+<!--botão com gatilho para modal-->
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modal">Saiba mais</button>
+<!-- Modal -->
+                <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Saiba mais</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        O cão foi descrito por Lineu em 1758 como Canis familiaris, e considerado como uma espécie distinta do lobo, descrito também por Lineu no mesmo ano como Canis lupus. Outros nomes foram descritos por Lineu, Johann Friedrich Gmelin e Charles Hamilton Smith para a mesma espécie, sendo considerados sinônimos. A ancestralidade canina vem sendo discutida e estudada desde há muitos anos. Teorias antigas sugerem uma origem proveniente do chacal-dourado ou então uma origem híbrida entre várias espécies. Um levantamento das sequências da região de controle do DNA mitocondrial em 140 cães e 162 lobos demonstrou que o lobo é o único ancestral dos cães. Esta conclusão foi confirmada em outro estudo envolvendo 654 cães e 38 lobos da Eurásia. Enquanto há uma aceitação do lobo como único progenitor do cão, a questão taxonômica envolvendo o reconhecimento de uma ou duas espécies distintas ainda não está resolvida. Baseado na consistência genética, Wayne considerou que o cão, apesar da diversidade em tamanho e proporção, nada mais é do que um lobo. Em contraste, análises estatísticas de crânios têm repetidamente demonstrado uma separação total entre lobo e cão.
+
+                        
+                      </div>
+                      <div class="modal-footer">
+                        fonte: <a class="nav-link text-primary" href="https://pt.wikipedia.org/wiki/C%C3%A3o">wikipedia</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
                 <button class="btn btn-outline-primary btn-lg">Conheça nossos clientes</button>
                 </div>
             </div>
+
+<!--carrossel - slide auto com botões-->  
+            <div id="carrossel" class="carousel slide col-12 col-lg-6" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrossel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrossel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carrossel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://cdn.pixabay.com/photo/2017/04/06/14/16/australian-shepherd-2208371_960_720.jpg" class="d-block w-100" alt="cachorros na pascoa">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.pixabay.com/photo/2022/05/18/17/50/dog-7205842_960_720.jpg" class="d-block w-100" alt="cachorro com chupeta na boca">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_960_720.jpg" class="d-block w-100" alt="cachorro fotogenico">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.pixabay.com/photo/2020/03/22/15/25/fetch-4957501_960_720.jpg" class="d-block w-100" alt="cachorro correndo com graveto na boca">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrossel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+<!--
             <div class="col-12 col-lg-6">
                 <img src="https://cdn.pixabay.com/photo/2022/05/18/17/50/dog-7205842_960_720.jpg" alt="cachorro de chupeta" class="img-fluid">
             </div>
         </div>
+-->
     </header>
 
     <div class="container">
         <div class="row my-5">
-            <div class="col-3">
+            <div class="col-4 mb-5">
                 <div class="card" style="width: 18rem;">
                     <img src="https://cdn.pixabay.com/photo/2022/05/18/17/50/dog-7205842_960_720.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -73,9 +130,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-4 mb-5">
                 <div class="card" style="width: 18rem;">
-                    <img src="https://cdn.pixabay.com/photo/2022/05/18/17/50/dog-7205842_960_720.jpg" class="card-img-top" alt="...">
+                    <img src="https://cdn.pixabay.com/photo/2017/04/06/14/16/australian-shepherd-2208371_960_720.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -83,9 +140,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-4 mb-5">
                 <div class="card" style="width: 18rem;">
-                    <img src="https://cdn.pixabay.com/photo/2022/05/18/17/50/dog-7205842_960_720.jpg" class="card-img-top" alt="...">
+                    <img src="https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_960_720.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -93,9 +150,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-4 mb-5">
                 <div class="card" style="width: 18rem;">
-                    <img src="https://cdn.pixabay.com/photo/2022/05/18/17/50/dog-7205842_960_720.jpg" class="card-img-top" alt="...">
+                    <img src="https://cdn.pixabay.com/photo/2020/03/22/15/25/fetch-4957501_960_720.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -105,7 +162,7 @@
             </div>
         </div>
     </div>
-    <footer class="mt-4 bg-secondary text-center text-ligth p-4">
+    <footer class="container mt-4 bg-secondary text-center text-ligth p-4">
         Criado por BrunoBenedicto
     </footer>
 
